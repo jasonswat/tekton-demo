@@ -60,6 +60,7 @@ ngrok http http://localhost:8080
  5. 
 ```
 kc apply -f trigger-binding.yml
+kc apply -f trigger-template.yml
 ```
 
 
