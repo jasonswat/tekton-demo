@@ -57,7 +57,10 @@ kubectl port-forward svc/el-github-pr 8080:8080
 ```
 ngrok http http://localhost:8080
 ```
-
+ 5. 
+```
+kc apply -f trigger-binding.yml
+```
 
 
 
