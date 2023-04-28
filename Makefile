@@ -18,7 +18,7 @@ push: ## Push Docker Images to artifactory
 	@docker push $(REPOSITORY)/statsd:$(STATSD_VERSION)-$(REVISION)
 
 deploy: ## Deploy to kubernetes
-	@kubectl create -f deployment.yaml --as app06742-sudo
+	@kubectl create -f deployment.yaml
 
 delete: ## Delete kubernetes deployment, volume, and service
-	@kubectl delete -f deployment.yaml --as app06742-sudo
+	@kubectl delete -f deployment.yaml
