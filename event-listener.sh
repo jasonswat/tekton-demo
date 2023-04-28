@@ -1,0 +1,6 @@
+echo "You need to run these in 2 terminals"
+echo "tkn eventlisteners list"
+echo "Port Forward:"
+echo "kubectl port-forward svc/el-github-pr 8080:8080"
+echo "ngrok:"
+echo "ngrok http http://localhost:8080"

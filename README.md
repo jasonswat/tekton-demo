@@ -50,13 +50,17 @@ github-pr   12 seconds ago   http://el-github-pr.default.svc.cluster.local:8080 
 ```
  3. Listener is only internal at this point, we'll forward the port to ngrok to make it availible
 ```
+./event-listener.sh # script will tell you the next 2 commands
 kubectl port-forward svc/el-github-pr 8080:8080
 ```
  4. Install sign up and install ngrok https://dashboard.ngrok.com/ and start ngrok
 ```
 ngrok http http://localhost:8080
 ```
-
+ 5. 
+```
+kc apply -f trigger-binding.yml
+```
 
 
 
